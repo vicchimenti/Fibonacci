@@ -1,0 +1,38 @@
+﻿@page
+@model Fibonacci.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Series</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Series.Position)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Series.Position)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Series.Result)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Series.Result)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Series.OperationTime)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Series.OperationTime)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Series.ID">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>
