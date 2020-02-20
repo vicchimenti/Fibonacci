@@ -9,6 +9,7 @@ namespace Fibonacci.Models
     public class Series
     {
         public int ID { get; set; }
+        public string Name { get; set; }
         public int Position { get; set; }
         public long Result { get; set; }
 
