@@ -28,7 +28,8 @@ namespace Fibonacci
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
-                    //.AddRazorPagesOptions(options => {
+                    //.AddRazorPagesOptions(options =>
+                    //{
                     //    options.RootDirectory = "/Series";
                     //});
 
