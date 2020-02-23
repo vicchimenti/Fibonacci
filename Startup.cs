@@ -37,7 +37,7 @@ namespace Fibonacci
                     options.UseSqlServer(Configuration.GetConnectionString("FibonacciContext")));
 
 
-            services.AddMemoryCache();
+            //services.AddMemoryCache();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
